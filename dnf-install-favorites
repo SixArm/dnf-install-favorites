@@ -1,0 +1,128 @@
+#!/bin/sh
+
+##
+# dnf-install-favorites
+#
+# Use the `dnf` command to install our favorite packages
+# for RedHat, Fedora, CentOS, etc.
+#
+# ## Tracking
+#
+# * Package: https://github.com/sixarm/dns-install-favorites
+# * Version: 1.1.0
+# * Created: 2020-06-19T06:15:16Z
+# * Updated: 2020-06-21T01:31:43Z
+# * License: [GPL-2.0](https://spdx.org/licenses/GPL-2.0-only.html)
+# * Contact: [Joel Parker Henderson](http://joelparkerhenderson.com)
+##
+
+##
+# Bootstrapping
+##
+
+# Dependencies
+dnf -y install ca-certificates
+dnf -y install curl
+dnf -y install gcc
+dnf -y install git
+dnf -y install git-core
+dnf -y install git-review
+dnf -y install make
+dnf -y install openssl
+dnf -y install openssl-devel
+dnf -y install patch
+dnf -y install xfsprogs
+
+# Libs
+dnf -y install libffi-devel
+dnf -y install libjpeg-turbo-devel
+dnf -y install libxml2-devel
+dnf -y install libxslt-devel
+
+# Fetching
+dnf -y install curl
+dnf -y install wget
+dnf -y install jq
+
+# Editing
+dnf -y install emacs
+dnf -y install nano
+dnf -y install vim
+
+##
+# Programming
+##
+
+# Compiler-related
+dnf -y install gcc
+
+# Data-related
+dnf -y install geos-devel
+
+# Database-related
+dnf -y install mysql-devel
+dnf -y install postgresql-devel
+
+# Java-related
+dnf -y install java-latest-openjdk.x86_64
+
+# JavaScript-related
+dnf -y install v8-devel
+
+# Node-related
+dnf -y install nodejs
+dnf -y install npm
+
+# Perl-related
+dnf -y install perl
+
+# Python-related
+dnf -y install python3
+dnf -y install python3-devel
+dnf -y install python3-numpy
+dnf -y install python3-pip
+dnf -y install python3-tox
+
+# Ruby-related
+dnf -y install ruby
+dnf -y install ruby-devel
+
+# Rust-related
+dnf -y install rust
+dnf -y install cargo
+
+# Utiltiies
+dnf -y install ack
+dnf -y install atop
+dnf -y install elinks
+dnf -y install fd-find
+dnf -y install gettext
+dnf -y install gnupg
+dnf -y install graphviz
+dnf -y install htop
+dnf -y install jq
+dnf -y install lynx
+dnf -y install most
+dnf -y install mutt
+dnf -y install nginx
+dnf -y install pcre2
+dnf -y install readline-devel
+dnf -y install ripgrep
+dnf -y install rsync
+dnf -y install screen
+dnf -y install ShellCheck
+dnf -y install tmux
+dnf -y install traceroute
+dnf -y install unzip
+dnf -y install uuid
+dnf -y install uuid-devel
+dnf -y install zoxide
+
+# Services
+dnf -y install monit
+
+# NGINX webserver related
+dnf -y install nginx
+
+# Z shell
+dnf -y install zsh
